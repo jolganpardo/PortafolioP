@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+  background-color: #1a002b;
+}
+
+/* Fondo personalizado opcional */
+body {
+  background-image: url("../assets/fondo.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
