@@ -3,6 +3,7 @@ import Encabezado from "./componentes/encabezado";
 import FondoInteractivo from "./componentes/fondoInteractivo"; 
 import SeccionPresentacion from "./componentes/seccionPresentacion";
 import SeccionSobreMi from "./componentes/seccionSobreMi";
+import SeccionHabilidades from "./componentes/seccionHabilidades";
 import SeccionProyectos from "./componentes/seccionProyectos";
 import SeccionContacto from "./componentes/seccionContacto";
 import PieDePagina from "./componentes/pieDePagina";
@@ -20,6 +21,7 @@ function AplicacionPrincipal() {
         <main className="container mx-auto px-6">
           <SeccionPresentacion />
           <SeccionSobreMi />
+          <SeccionHabilidades />
           <SeccionProyectos />
           <SeccionContacto />
           <BotonArriba />
