@@ -17,7 +17,7 @@ const proyectos = [
 
 function SeccionProyectos() {
   return (
-    <section id="proyectos" className="py-16">
+    <section id="proyectos" className="py-16 scroll-mt-40">
       <h3 className="text-3xl font-bold mb-10 text-center text-blue-400">Proyectos</h3>
       <div className="grid md:grid-cols-2 gap-10">
         {proyectos.map((proyecto) => (

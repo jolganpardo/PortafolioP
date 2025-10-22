@@ -4,7 +4,7 @@ function SeccionSobreMi() {
   return (
     <section
       id="sobreMi"
-      className="flex flex-col md:flex-row items-center justify-center py-20 px-10 bg-[rgba(0,0,0,0.35)] text-gray-200 rounded-2xl"
+      className="flex flex-col md:flex-row items-center justify-center py-20 px-10 bg-[rgba(0,0,0,0.35)] text-gray-200 rounded-2xl scroll-mt-40"
     >
       {/* Imagen lateral */}
       <div className="w-full md:w-1/2 flex justify-center mb-12 md:mb-0">

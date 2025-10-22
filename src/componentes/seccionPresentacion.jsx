@@ -6,7 +6,7 @@ function SeccionPresentacion() {
   return (
     <section
       id="inicio"
-      className="flex flex-col md:flex-row items-center justify-center min-h-[90vh] px-8 md:px-20 relative"
+      className="flex flex-col md:flex-row items-center justify-center min-h-[90vh] px-8 md:px-20 relative scroll-mt-40"
     >
       {/* Imagen */}
       <img

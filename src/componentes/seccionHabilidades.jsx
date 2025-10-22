@@ -48,7 +48,7 @@ function SeccionHabilidades() {
 
   return (
     <section id="skills" className="min-h-[90vh] text-center py-16">
-      <h2 className="text-4xl font-extrabold text-purple-400 mb-8">
+      <h2 className="text-4xl font-extrabold text-purple-400 mb-8 scroll-mt-40">
         Mis habilidades
       </h2>
 
