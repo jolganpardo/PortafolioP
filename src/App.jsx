@@ -1,10 +1,12 @@
 import React from "react";
-import Encabezado from "./componentes/Encabezado";
-import FondoInteractivo from "./componentes/fondoInteractivo"; // ✅ Asegúrate que el nombre coincida
-import SeccionPresentacion from "./componentes/SeccionPresentacion";
-import SeccionProyectos from "./componentes/SeccionProyectos";
-import SeccionContacto from "./componentes/SeccionContacto";
-import PieDePagina from "./componentes/PieDePagina";
+import Encabezado from "./componentes/encabezado";
+import FondoInteractivo from "./componentes/fondoInteractivo"; 
+import SeccionPresentacion from "./componentes/seccionPresentacion";
+import SeccionSobreMi from "./componentes/seccionSobreMi";
+import SeccionProyectos from "./componentes/seccionProyectos";
+import SeccionContacto from "./componentes/seccionContacto";
+import PieDePagina from "./componentes/pieDePagina";
+import BotonArriba from "./componentes/btnTop";
 
 function AplicacionPrincipal() {
   return (
@@ -17,8 +19,10 @@ function AplicacionPrincipal() {
         <Encabezado />
         <main className="container mx-auto px-6">
           <SeccionPresentacion />
+          <SeccionSobreMi />
           <SeccionProyectos />
           <SeccionContacto />
+          <BotonArriba />
         </main>
         <PieDePagina />
       </div>

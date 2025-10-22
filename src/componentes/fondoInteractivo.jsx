@@ -44,7 +44,7 @@ const FondoInteractivo = () => {
         const mouse = mouseRef.current;
         if (mouse.x !== null) {
           const dx = mouse.x - this.x;
-          const dy = (mouse.y + scrollYRef.current) - this.y;
+          const dy = mouse.y - this.y;
           const distance = Math.sqrt(dx * dx + dy * dy);
 
           if (distance < mouse.radius) {

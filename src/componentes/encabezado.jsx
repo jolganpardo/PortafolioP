@@ -2,13 +2,22 @@ import React from "react";
 
 function Encabezado() {
   return (
-    <header className="flex justify-between items-center py-6 px-4">
-      <h1 className="text-2xl font-bold text-blue-400">Mi Portafolio</h1>
-      <nav className="space-x-6">
-        <a href="#inicio" className="hover:text-blue-400 transition">Inicio</a>
-        <a href="#proyectos" className="hover:text-blue-400 transition">Proyectos</a>
-        <a href="#contacto" className="hover:text-blue-400 transition">Contacto</a>
-      </nav>
+    <header className="flex justify-center items-center py-6 px-4 space-x-8">
+        <a href="#inicio" className="px-4 py-2 rounded-md transition-all duration-700 font-bold
+             hover:bg-[rgba(255,255,255,0.52)] hover:text-black
+             hover:-translate-y-1 hover:scale-115">Inicio</a>
+       <a href="#sobreMi" className="px-4 py-2 rounded-md transition-all duration-700 font-bold
+             hover:bg-[rgba(255,255,255,0.52)] hover:text-black
+             hover:-translate-y-1 hover:scale-115">Sobre Mi</a>   
+        <a href="#proyectos" className="px-4 py-2 rounded-md transition-all duration-700 font-bold
+             hover:bg-[rgba(255,255,255,0.52)] hover:text-black
+             hover:-translate-y-1 hover:scale-115">Proyectos</a>
+        <a href="#contacto" className="px-4 py-2 rounded-md transition-all duration-700 font-bold
+             hover:bg-[rgba(255,255,255,0.52)] hover:text-black
+             hover:-translate-y-1 hover:scale-115">Contacto</a>
+        <a href="#skills" className="px-4 py-2 rounded-md transition-all duration-700 font-bold
+             hover:bg-[rgba(255,255,255,0.52)] hover:text-black
+             hover:-translate-y-1 hover:scale-115">Habilidades</a>  
     </header>
   );
 }
