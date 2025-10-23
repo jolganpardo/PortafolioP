@@ -43,5 +43,14 @@ body {
   animation:
     typing-strong 3.5s steps(40, end) 0.5s forwards,
     blink-strong 0.8s step-end infinite;
-  text-shadow: 0 0 10px #7c3aed90, 0 0 20px #7c3aed50; /* le da glow */
+  text-shadow: 0 0 10px #7c3aed90, 0 0 20px #7c3aed50; 
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; 
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Code, Users } from "lucide-react";
+import Zkoss from "../assets/img/skills/Zkoss.png";
 import {
   FaJava,
   FaJs,
@@ -27,6 +28,7 @@ const skills = {
     { name: "Spring Boot", icon: <SiSpringboot size={40} color="#6DB33F" /> },
     { name: "React.js", icon: <FaReact size={40} color="#61DBFB" /> },
     { name: "Git", icon: <FaGitAlt size={40} color="#F05032" /> },
+    { name: "ZK Framework", icon: <img src={Zkoss} alt="ZK Framework" width={40} height={40} /> }
   ],
 
   blandas: [
@@ -47,7 +49,7 @@ function SeccionHabilidades() {
   const [categoria, setCategoria] = useState("programacion");
 
   return (
-    <section id="skills" className="min-h-[90vh] text-center py-16">
+    <section id="skills" className="text-center py-16 scroll-mt-40">
       <h2 className="text-4xl font-extrabold text-purple-400 mb-8 scroll-mt-40">
         Mis habilidades
       </h2>
