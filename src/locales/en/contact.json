@@ -1,0 +1,10 @@
+{
+  "titulo": "Contact Me",
+  "descripcion": "If you have a proposal, idea or interesting project, don’t hesitate to write me. I’d be happy to collaborate with you!",
+  "nombre": "Name",
+  "correo": "Email",
+  "mensaje": "Message",
+  "boton": "Send Message",
+  "alerta_enviado": "Message sent successfully!",
+  "alerta_error": "Error sending message: {{error}}"
+}

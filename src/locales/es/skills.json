@@ -1,0 +1,17 @@
+{
+  "titulo": "Mis habilidades",
+  "boton_programacion": "Programación",
+  "boton_blandas": "Habilidades blandas",
+  "blandas": [
+    "Pensamiento analítico",
+    "Pensamiento crítico",
+    "Liderazgo",
+    "Trabajo en equipo",
+    "Comunicación efectiva",
+    "Adaptabilidad",
+    "Resolución de problemas",
+    "Aprendizaje continuo",
+    "Gestión del tiempo",
+    "Proactividad"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "titulo": "Contáctame",
+  "descripcion": "Si tienes una propuesta, idea o proyecto interesante, no dudes en escribirme. ¡Estaré encantado de colaborar contigo!",
+  "nombre": "Nombre",
+  "correo": "Correo electrónico",
+  "mensaje": "Mensaje",
+  "boton": "Enviar mensaje",
+  "alerta_enviado": "¡Mensaje enviado correctamente!",
+  "alerta_error": "Error al enviar el mensaje: {{error}}"
+}

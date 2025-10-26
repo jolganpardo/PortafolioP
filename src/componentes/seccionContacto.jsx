@@ -2,8 +2,10 @@ import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { FaGithub, FaLinkedin, FaWhatsapp, FaEnvelope } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 function SeccionContacto() {
+  const { t } = useTranslation("contact");
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -16,8 +18,8 @@ function SeccionContacto() {
         "TXrLCEh8JPTfcHbwd"
       )
       .then(
-        () => alert("📨 ¡Mensaje enviado correctamente!"),
-        (error) => alert("❌ Error al enviar el mensaje: " + error.text)
+        () => alert(t("alerta_enviado")),
+        (error) => alert(t("alerta_error", { error: error.text }))
       );
   };
 
@@ -26,7 +28,6 @@ function SeccionContacto() {
       id="contacto"
       className="relative py-20 text-white flex flex-col items-center justify-center scroll-mt-40"
     >
-
       <div className="relative z-10 max-w-6xl w-full px-6 grid md:grid-cols-2 gap-10">
         {/* Columna izquierda - Información y redes */}
         <motion.div
@@ -35,11 +36,8 @@ function SeccionContacto() {
           transition={{ duration: 0.6 }}
           className="flex flex-col justify-center space-y-6"
         >
-          <h3 className="text-4xl font-bold text-blue-400">Contáctame</h3>
-          <p className="text-gray-300 text-lg">
-            Si tienes una propuesta, idea o proyecto interesante, no dudes en
-            escribirme. ¡Estaré encantado de colaborar contigo!
-          </p>
+          <h3 className="text-4xl font-bold text-blue-400">{t("titulo")}</h3>
+          <p className="text-gray-300 text-lg">{t("descripcion")}</p>
 
           <div className="flex flex-wrap gap-6 mt-6">
             <a
@@ -86,7 +84,7 @@ function SeccionContacto() {
         >
           <div>
             <label className="block text-gray-300 mb-2 text-left">
-              Nombre
+              {t("nombre")}
             </label>
             <input
               type="text"
@@ -98,7 +96,7 @@ function SeccionContacto() {
 
           <div>
             <label className="block text-gray-300 mb-2 text-left">
-              Correo electrónico
+              {t("correo")}
             </label>
             <input
               type="email"
@@ -110,7 +108,7 @@ function SeccionContacto() {
 
           <div>
             <label className="block text-gray-300 mb-2 text-left">
-              Mensaje
+              {t("mensaje")}
             </label>
             <textarea
               name="message"
@@ -124,7 +122,7 @@ function SeccionContacto() {
             type="submit"
             className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition transform hover:scale-105"
           >
-            Enviar mensaje
+            {t("boton")}
           </button>
         </motion.form>
       </div>

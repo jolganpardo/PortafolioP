@@ -1,0 +1,30 @@
+{
+  "titulo": "Projects",
+  "verProyecto": "View project →",
+  "lista": [
+    {
+      "titulo": "Agricultural Farm Management System",
+      "descripcion": "Database system designed to manage an agricultural production farm. It controls inventories, employees, machinery, sales, and production, automating processes with stored procedures, functions, triggers, and events. Optimizes management and data analysis with analytical queries and role-based access control."
+    },
+    {
+      "titulo": "Savings Calendar",
+      "descripcion": "Savings Calendar is a web app designed to visualize and manage a daily savings plan throughout the month. It uses a clear interface where each day changes state when savings are made, offering an intuitive way to track progress toward savings goals."
+    },
+    {
+      "titulo": "Happy Feet Veterinary Clinic",
+      "descripcion": "Console-based veterinary management app built with Java and MySQL. It manages data for pets, owners, vets, appointments, medical records, inventory, and billing. Implements an MVC architecture with JDBC, providing a complete experience for clinic administration."
+    },
+    {
+      "titulo": "Acme Bank",
+      "descripcion": "Banking web app developed in JavaScript for managing user accounts, transactions, activity history, secure login, and financial data visualization. Developed in collaboration by Jolgan Pardo (me) and Fredy León."
+    },
+    {
+      "titulo": "Photography — Capturing Feelings",
+      "descripcion": "Single-page project built with pure HTML and CSS (no frameworks) for a wedding photography couple. Includes home, about, gallery, pricing, and contact sections, along with a mobile hamburger menu and fixed chat button. Developed by Jolgan Pardo."
+    },
+    {
+      "titulo": "Population Data Management",
+      "descripcion": "Console app built with Python to manage and analyze global population data using JSON files as a database. Allows registering, consulting, and updating countries and indicators, and generates statistical and comparative reports on population growth."
+    }
+  ]
+}

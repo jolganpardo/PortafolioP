@@ -1,0 +1,17 @@
+{
+  "titulo": "My Skills",
+  "boton_programacion": "Programming",
+  "boton_blandas": "Soft Skills",
+  "blandas": [
+    "Analytical thinking",
+    "Critical thinking",
+    "Leadership",
+    "Teamwork",
+    "Effective communication",
+    "Adaptability",
+    "Problem solving",
+    "Continuous learning",
+    "Time management",
+    "Proactivity"
+  ]
+}

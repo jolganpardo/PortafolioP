@@ -1,0 +1,10 @@
+{
+  "titulo": "About Me",
+  "alt": "Developing projects",
+  "parrafo1": {
+    "parte1": "I am a",
+    "fullstack": "Full-Stack Junior Developer",
+    "parte2": "who enjoys turning ideas into functional and visually appealing digital experiences. I’m passionate about the intersection between design and logic, where every line of code tells a story. I aim to create solutions that connect with people, learning and growing with each project I build."
+  },
+  "parrafo2": "Always seeking balance between creativity, structure, and purpose."
+}
