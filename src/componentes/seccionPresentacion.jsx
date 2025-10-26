@@ -28,9 +28,13 @@ function SeccionPresentacion() {
         </h3>
 
         {/* Frase con efecto máquina de escribir */}
-        <p className="text-white text-2xl font-bold whitespace-nowrap overflow-hidden border-r-4 border-indigo-400 pr-2 animate-typing-strong">
-          Diseñando soluciones que cuentan historias.
-        </p>
+        <p className="max-w-6xl text-white text-base sm:text-lg md:text-xl lg:text-2xl font-bold 
+         overflow-hidden border-r-4 border-indigo-400 pr-2 animate-typing-strong 
+        text-center sm:text-left"
+      >
+        Diseñando soluciones que cuentan historias.
+      </p>
+
 <br />
         <a
           href="#contacto"

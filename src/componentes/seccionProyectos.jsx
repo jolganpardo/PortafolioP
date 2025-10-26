@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Fotografias from "../assets/img/proyectos/Fotografias.png";
 import AcmeBank from "../assets/img/proyectos/AcmeBank.png";
@@ -62,6 +62,14 @@ const proyectos = [
 
 function SeccionProyectos() {
   const scrollRef = useRef(null);
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
+
+  // Detectar si es desktop para habilitar drag
+  useEffect(() => {
+    const handleResize = () => setIsDesktop(window.innerWidth >= 768);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   // Auto-scroll
   useEffect(() => {
@@ -101,50 +109,58 @@ function SeccionProyectos() {
 
       {/* Contenedor principal con flechas */}
       <div className="relative group w-full overflow-hidden">
-        {/* Flecha izquierda */}
+        {/* Flecha izquierda (solo visible en desktop) */}
         <button
           onClick={scrollLeft}
-          className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-black/40 hover:bg-black/60 text-white p-3 rounded-full opacity-0 group-hover:opacity-100 cursor-pointer hover:scale-120 transition-all duration-300 text-2xl"
+          className="hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 z-10 
+          bg-black/40 hover:bg-black/60 text-white p-3 rounded-full cursor-pointer 
+          hover:scale-110 transition-all duration-300 text-2xl"
         >
           ⮜
         </button>
 
-        {/* Contenedor con scroll */}
+        {/* Contenedor con scroll horizontal */}
         <div
           ref={scrollRef}
-          className="flex overflow-x-auto scroll-smooth scrollbar-hide snap-x snap-mandatory w-full"
+          className="flex overflow-x-auto scroll-smooth scrollbar-hide snap-x snap-mandatory w-full touch-pan-x"
         >
           {proyectos.map((proyecto) => (
             <motion.div
               key={proyecto.id}
-              className="flex-shrink-0 snap-start w-full flex flex-col md:flex-row items-center justify-center px-8 cursor-grab active:cursor-grabbing"
-              drag
-              dragElastic={0.25}
-              dragConstraints={{ top: 0, bottom: 0, left: -120, right: 120 }}
-              whileTap={{ scale: 0.97 }}
-              whileHover={{
-                scale: 1.02,
-                rotate: 0.5,
-                boxShadow: "0px 10px 25px rgba(0, 0, 0, 0.25)",
-              }}
-              transition={{ type: "spring", stiffness: 200, damping: 15 }}
+              className="flex-shrink-0 snap-start w-full flex flex-col md:flex-row 
+              items-center justify-center px-4 sm:px-8 py-6"
+              {...(isDesktop
+                ? {
+                    drag: true,
+                    dragElastic: 0.25,
+                    dragConstraints: { top: 0, bottom: 0, left: -120, right: 120 },
+                    whileHover: {
+                      scale: 1.02,
+                      rotate: 0.5,
+                      boxShadow: "0px 10px 25px rgba(0, 0, 0, 0.25)",
+                    },
+                    transition: { type: "spring", stiffness: 200, damping: 15 },
+                  }
+                : {})}
             >
-              {/* Imagen a la izquierda */}
+              {/* Imagen arriba en móvil / izquierda en desktop */}
               <img
                 src={proyecto.imagen}
                 alt={proyecto.titulo}
-                className="md:w-1/2 max-w-150 object-cover rounded-2xl shadow-lg mb-6 md:mb-0 md:mr-6"
+                className="w-full md:w-1/2 max-w-[600px] object-cover rounded-2xl shadow-lg mb-6 md:mb-0 md:mr-6"
               />
 
-              {/* Texto a la derecha */}
-              <div className="bg-gray-900/70 backdrop-blur-md p-8 rounded-2xl shadow-lg w-full md:w-1/2 transition-all duration-300">
-                <h4 className="text-2xl font-semibold mb-2 text-blue-300">
+              {/* Texto abajo en móvil / derecha en desktop */}
+              <div className="bg-gray-900/70 backdrop-blur-md p-6 sm:p-8 rounded-2xl shadow-lg w-full md:w-1/2 text-center md:text-left">
+                <h4 className="text-2xl font-semibold mb-3 text-blue-300">
                   {proyecto.titulo}
                 </h4>
-                <p className="text-gray-400 mb-4">{proyecto.descripcion}</p>
+                <p className="text-gray-400 mb-4 text-sm sm:text-base leading-relaxed">
+                  {proyecto.descripcion}
+                </p>
                 <a
                   href={proyecto.enlace}
-                  className="text-blue-400 hover:underline"
+                  className="text-blue-400 hover:underline font-semibold"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -155,10 +171,12 @@ function SeccionProyectos() {
           ))}
         </div>
 
-        {/* Flecha derecha */}
+        {/* Flecha derecha (solo visible en desktop) */}
         <button
           onClick={scrollRight}
-          className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-black/40 hover:bg-black/60 text-white p-3 rounded-full opacity-0 group-hover:opacity-100 cursor-pointer hover:scale-120 transition-all duration-300 text-2xl"
+          className="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 z-10 
+          bg-black/40 hover:bg-black/60 text-white p-3 rounded-full cursor-pointer 
+          hover:scale-110 transition-all duration-300 text-2xl"
         >
           ⮞
         </button>
