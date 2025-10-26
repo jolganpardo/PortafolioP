@@ -15,7 +15,7 @@ const FondoInteractivo = () => {
     let width = canvas.width = window.innerWidth;
     let height = canvas.height = document.documentElement.scrollHeight;
 
-    const colors = ['#ffffff', '#e0aaff', '#c77dff', '#b8a0ff'];
+    const colors = ['#e6f2ff', '#cce7ff', '#b3dcff', '#99d1ff'];
     const snowflakeCount = 150;
 
     class Snowflake {
@@ -107,14 +107,14 @@ const FondoInteractivo = () => {
     }
 
     const initSnowflakes = () => {
-  snowflakesRef.current = [];
-  for (let i = 0; i < snowflakeCount; i++) {
-    const snowflake = new Snowflake();
-    // Posición inicial y aleatoria para que caigan de forma escalonada
-    snowflake.y = Math.random() * height * 1.5 - height * 0.5; // Valores entre -height/2 y height
-    snowflakesRef.current.push(snowflake);
-  }
-};
+      snowflakesRef.current = [];
+      for (let i = 0; i < snowflakeCount; i++) {
+        const snowflake = new Snowflake();
+        // Posición inicial y aleatoria para que caigan de forma escalonada
+        snowflake.y = Math.random() * height * 1.5 - height * 0.5; // Valores entre -height/2 y height
+        snowflakesRef.current.push(snowflake);
+      }
+    };
 
 
     const drawConnections = () => {
@@ -127,7 +127,7 @@ const FondoInteractivo = () => {
 
           if (distance < 100) {
             const opacity = (1 - distance / 100) * 0.2;
-            ctx.strokeStyle = `rgba(192, 160, 255, ${opacity})`;
+            ctx.strokeStyle = `rgba(179, 220, 255, ${opacity})`;
             ctx.lineWidth = 0.5;
             ctx.beginPath();
             ctx.moveTo(snowflakes[i].x, snowflakes[i].y);
@@ -139,12 +139,26 @@ const FondoInteractivo = () => {
     };
 
     const animate = () => {
+      // Fondo azul oscuro (noche)
       const gradient = ctx.createLinearGradient(0, 0, 0, height);
-      gradient.addColorStop(0, '#0a0014');
-      gradient.addColorStop(0.5, '#1a002b');
-      gradient.addColorStop(1, '#0a0014');
+      gradient.addColorStop(0, '#000408');
+      gradient.addColorStop(0.5, '#00050d');
+      gradient.addColorStop(1, '#000204');
       ctx.fillStyle = gradient;
       ctx.fillRect(0, 0, width, height);
+
+      // Dibujar estrellas
+      ctx.fillStyle = '#ffffff';
+      for (let i = 0; i < 200; i++) {
+        const x = (i * 1234.5) % width;
+        const y = (i * 5678.9) % height;
+        const size = Math.random() * 1.5;
+        ctx.globalAlpha = Math.random() * 0.8 + 0.2;
+        ctx.beginPath();
+        ctx.arc(x, y, size, 0, Math.PI * 2);
+        ctx.fill();
+      }
+      ctx.globalAlpha = 1;
 
       snowflakesRef.current.forEach(snowflake => {
         snowflake.update();
