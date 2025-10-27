@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import imagenPerfil from "../assets/img/sobreMi/perfil.jpg";
+import Computador from "../assets/img/sobreMi/Computador.jpg";
 import Video from "../assets/video/VideoPresentacion.mp4";
 
 function SeccionSobreMi() {
@@ -13,17 +13,18 @@ function SeccionSobreMi() {
     >
       {/* Imagen lateral */}
       <div className="w-full md:w-1/2 flex justify-center mb-12 md:mb-0">
-        <video
-          src={Video}
-          controls
-          autoPlay
-          loop
-          muted
-          className="rounded-2xl shadow-[0_0_40px_#9333ea80] border border-[#a855f7]/30 max-w-md transition-transform duration-300 hover:scale-105"
-        >
-          {t("alt")}
-        </video>
-    </div>
+      <a
+        href="https://drive.google.com/file/d/1iQ55s4tDUQRHCHUvURWFlPRtiDNgNAPS/view"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src={Computador}
+          alt={t("Imagen Fondo")}
+          className="rounded-2xl shadow-[0_0_40px_#9333ea80] border border-[#a855f7]/30 max-w-lg transition-transform duration-300 hover:scale-105 cursor-pointer"
+        />
+      </a>
+      </div>
 
       {/* Texto */}
       <div className="md:w-1/2 md:pl-16 text-center md:text-left space-y-6">

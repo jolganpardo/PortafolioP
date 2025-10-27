@@ -46,6 +46,7 @@ function SeccionPresentacion() {
         >
           {t("boton")}
         </a>
+        
       </div>
 
       {/* Flecha scroll */}
