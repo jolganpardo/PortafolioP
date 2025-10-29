@@ -27,7 +27,7 @@
       "descripcion": "Console app built with Python to manage and analyze global population data using JSON files as a database. Allows registering, consulting, and updating countries and indicators, and generates statistical and comparative reports on population growth."
     },
     {
-      "titulo": "Agenda de Tareas",
+      "titulo": "Task Schedule",
       "descripcion": "Web application built with Java and the ZKoss Framework, designed to manage daily tasks in an intuitive and efficient way. It allows users to add, edit, and delete tasks with customizable fields such as title, description, date, and status. The dynamic ZK-based interface provides a smooth, reload-free experience — ideal for business or academic environments that need a simple task management system."
     }
   ]
