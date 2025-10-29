@@ -8,6 +8,7 @@ import Calendario from "../assets/img/proyectos/CalendarioAhorro.png";
 import GestionPoblacion from "../assets/img/proyectos/GestionPoblacion.png";
 import HappyFeet from "../assets/img/proyectos/Happyfeet.png";
 import GestionAgricola from "../assets/img/proyectos/GestionAgricola.jpg";
+import ListaTareas from "../assets/img/proyectos/ListaTareas.png";
 
 function SeccionProyectos() {
   const { t } = useTranslation("project");
@@ -26,6 +27,7 @@ function SeccionProyectos() {
     AcmeBank,
     Fotografias,
     GestionPoblacion,
+    ListaTareas,
   ];
 
   // Tus enlaces originales (misma correspondencia por índice)
@@ -36,6 +38,7 @@ function SeccionProyectos() {
     "https://jolganpardo.github.io/ProyectoAcmebank_JavaScript_PardoJolgan_LeonFredy/",
     "https://jolganpardo.github.io/Proyecto-Fotografias/",
     "https://github.com/jolganpardo/Proyecto-Python-Pardo-Jolgan",
+    "https://github.com/jolganpardo/Agenda_De_Tareas",
   ];
 
   // Obtenemos el arreglo de proyectos desde i18next (puede ser [] al inicio)

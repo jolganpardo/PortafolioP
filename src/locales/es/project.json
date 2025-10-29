@@ -25,6 +25,10 @@
     {
       "titulo": "Gestión de Datos de Población",
       "descripcion": "Aplicación en consola desarrollada en Python para administrar y analizar datos de población mundial usando archivos JSON como base de datos. Permite registrar, consultar y actualizar información de países e indicadores, además de generar reportes estadísticos y comparativos sobre crecimiento poblacional."
+    },
+    {
+      "titulo": "Agenda de Tareas",
+      "descripcion": "Aplicación web desarrollada en Java utilizando el framework ZKoss, diseñada para gestionar tareas de manera intuitiva y eficiente. Permite agregar, editar y eliminar tareas con campos personalizados como título, descripción, fecha y estado. Su interfaz dinámica basada en ZK ofrece una experiencia fluida sin recargar la página, ideal para entornos empresariales o educativos que requieran un control simple de pendientes."
     }
   ]
 }
