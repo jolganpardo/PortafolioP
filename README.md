@@ -108,15 +108,15 @@ PortafolioP es una aplicación web **moderna y responsiva** desarrollada con **R
 
 ¿Te interesa colaborar, saber más o dar feedback?
 - **Email:** davidpardo016@gmail.com
-- **LinkedIn:** Jolgan Pardo
-- **GitHub:** jolganpardo
+- **LinkedIn:** [Jolgan Pardo](https://www.linkedin.com/in/jolgan-pardo-429a422a7/)
+- **GitHub:** [jolganpardo](https://github.com/jolganpardo)
 - **WhatsApp:** [Enlace directo](https://wa.me/573124209860)
 
 ---
 
 ## 🔏 Licencia
 
-© 2025 Jolgan Pardo. Proyecto original, prohibida reproducción sin autorización expresa.
+© 2025 Jolgan Pardo. Todos los derechos reservados.
 
 ---
 
