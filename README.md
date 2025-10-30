@@ -1,86 +1,118 @@
 # PortafolioP
 
-**Desarrollado por Jolgan Pardo**
-- [LinkedIn](https://www.linkedin.com/in/jolgan-pardo-429a422a7/) | [GitHub](https://github.com/jolganpardo) | [davidpardo016@gmail.com](mailto:davidpardo016@gmail.com)
+**Desarrollado por Jolgan Pardo**  
+[LinkedIn](https://www.linkedin.com/in/jolgan-pardo-429a422a7/) | [GitHub](https://github.com/jolganpardo) | davidpardo016@gmail.com
+
+---
 
 ## 🧾 Resumen del Proyecto
 
-Este repositorio contiene mi portafolio profesional, una aplicación web desarrollada con React + Vite + Tailwind CSS para la interfaz, y centrada en mis habilidades de desarrollo backend: diseño de APIs, bases de datos, arquitectura de servicios y despliegue en producción. El objetivo es mostrar tanto el “Front-End” visual como el “Back-End” que lo hace funcionar.
+PortafolioP es una aplicación web **moderna y responsiva** desarrollada con **React, Vite y Tailwind CSS**, pensada para mostrar mis habilidades técnicas en backend y frontend. El portafolio incluye:
+- Sección de presentación personal, habilidades técnicas & blandas.
+- Proyectos destacados (Java, JavaScript, ZK, Python, MySQL, PostgreSQL, Spring Boot, React).
+- Carrusel de proyectos con imágenes, descripciones y enlaces al código/vivo.
+- Formulario de contacto funcional (EmailJS) y enlaces a redes profesionales.
+- Animaciones y fondo interactivo personalizado.
+- Soporte multilenguaje (español / inglés).
+- Deploy automático en GitHub Pages.
 
-## 🎯 Objetivos
+---
 
-* Mostrar una plataforma web elegante, rápida y responsiva que sirva como carta de presentación profesional.
-* Destacar mis proyectos de backend (APIs REST/GraphQL, microservicios, integración de bases de datos, despliegues) y cómo se integran con frontends.
-* Demostrar buenas prácticas de desarrollo backend: lógica de negocio clara, separación de responsabilidades, seguridad, escalabilidad.
-* Desplegar de forma automática mediante GitHub Pages u otro servicio para el frontend, y mostrar enlaces a mis servicios backend desplegados (cuando aplique).
+## 🎯 Características principales
 
-## 🛠️ Tecnologías empleadas
+- Navegación fluida por secciones: Sobre mí, Habilidades, Proyectos, Contacto.
+- **Botón de traducción**: cambia el idioma de toda la interfaz.
+- Carrusel de proyectos con scroll y drag en desktop.
+- Formulario de contacto integrado (EmailJS) y redes sociales con íconos.
+- Fondo animado e interactivo (canvas).
+- Botón flotante animado para volver arriba (scroll).
+- Totalmente responsivo y mobile-first.
+- Íconos personalizados y categorización clara de habilidades.
+- Animaciones avanzadas con Framer Motion.
+- Integración de archivos de traducción y localización en múltiples idiomas.
 
-| Tecnología              | Descripción                                                                                                    |
-| ----------------------- | -------------------------------------------------------------------------------------------------------------- |
-| **Vite**                | Herramienta de build rápida para aplicaciones modernas en React.                                               |
-| **React**               | Biblioteca para la interfaz de usuario.                                                                        |
-| **Tailwind CSS**        | Framework de utilidades para el diseño responsivo.                                                             |
-| **Node.js / Express**   | Plataforma y framework backend (o la que uses: Django, Go, etc) para el desarrollo de servicios.               |
-| **Bases de datos**      | MySQL / PostgreSQL / MongoDB / Redis según proyecto — almacenamiento y caching.                                |
-| **Despliegue & DevOps** | GitHub Pages para frontend, otros servicios (Heroku, Render, AWS, etc) para backend; CI/CD, contenedores, etc. |
+---
+
+## 🛠️ Tecnologías usadas
+
+| Tecnología         | Descripción                                                                      |
+|--------------------|----------------------------------------------------------------------------------|
+| **React 19**       | Interfaz de usuario y componentes.                                               |
+| **Vite**           | Build y entorno de desarrollo ultra-rápido.                                      |
+| **Tailwind CSS**   | Framework CSS para diseño responsivo y utility-first.                            |
+| **Framer Motion**  | Animaciones fluidas en UI.                                                       |
+| **EmailJS**        | Envío de correos desde el formulario de contacto.                                |
+| **i18next/react**  | Soporte multilenguaje.                                                           |
+| **Java / ZKoss**   | Proyectos backend destacados.                                                    |
+| **Spring Boot**    | Integración backend (proyectos).                                                 |
+| **MySQL / PostgreSQL / Python** | Proyectos y bases de datos exclusivos en el portafolio.              |
+| **GitHub Pages**   | Despliegue automático.                                                           |
+
+---
 
 ## 🚀 Cómo ejecutar localmente
 
-1. Clona el repositorio:
-
+1. Clona el repositorio
    ```bash
    git clone https://github.com/jolganpardo/PortafolioP.git
    ```
-2. Accede a la carpeta del proyecto:
-
+2. Accede al directorio
    ```bash
    cd PortafolioP
    ```
-3. Instala las dependencias del frontend:
-
+3. Instala dependencias
    ```bash
    npm install
    ```
-4. Inicia el entorno de desarrollo del frontend:
-
+4. Inicia el frontend para desarrollo
    ```bash
    npm run dev
    ```
-5. Para generar el build de producción del frontend:
-
+5. Genera el build de producción (si lo quieres desplegar)
    ```bash
    npm run build
    ```
 
-## Características destacadas
+---
 
-* Navegación fluida entre las secciones: Sobre mí · Proyectos · Contacto.
-* Adaptabilidad completa para móviles, tablets y escritorio.
-* Sección de proyectos que incluye tanto frontend como backend: descripción, tecnologías usadas, enlace al código, enlace al servicio en vivo (API o aplicación).
-* Backend: interfaces de API documentadas, autenticación/autorización (si aplica), base de datos, caching, despliegue en producción.
-* Deploy continuo para frontend y visibilidad clara del estado del backend (logs, endpoints, pruebas).
+## 📂 Estructura de carpetas
 
-## 📂 Roadmap / Próximos pasos
+- `/public`: archivos públicos y recursos (favicon, imágenes).
+- `/src`: código fuente principal.
+  - `/componentes`: componentes React de la interfaz.
+  - `/assets`: imágenes, íconos y recursos estáticos.
+  - `/estilos`: archivos CSS/Tailwind personalizados.
+  - `/locales`: traducciones (i18next).
+- `package.json`: dependencias y scripts (dev, build, deploy).
+- `vite.config.js`: configuración de Vite/Tailwind.
 
-* Añadir sección dedicada exclusivamente a servicios backend: microservicios, colas de mensajes, arquitectura orientada a eventos.
-* Implementar modo oscuro en la interfaz para mejor experiencia de usuario.
-* Añadir formulario de contacto real con backend (endpoint + lógica de negocio) y validación.
-* Integrar métricas de rendimiento para backend (por ejemplo tiempo de respuesta, uso de memoria) y frontend (Lighthouse).
-* Documentar tus APIs con herramienta como Swagger/OpenAPI y exponer una demo pública.
+---
+
+## ⚡ Roadmap / Próximos pasos
+
+- Añadir sección de microservicios y arquitecturas backend avanzadas (ZK, colas, eventos).
+- Métricas e informes de rendimiento frontend y backend (Lighthouse, logs).
+- Mejorar visualización de proyectos y enlaces a demos en vivo.
+- Integración de documentación automática (Swagger/OpenAPI para APIs).
+- Modo oscuro y personalización visual extendida.
+
+---
 
 ## 📞 Contacto
 
-Si quieres ver más de mi trabajo, colaborar o simplemente saludar, puedes contactarme en:
+¿Te interesa colaborar, saber más o dar feedback?
+- **Email:** davidpardo016@gmail.com
+- **LinkedIn:** Jolgan Pardo
+- **GitHub:** jolganpardo
+- **WhatsApp:** [Enlace directo](https://wa.me/573124209860)
 
-* **Email:** [davidpardo016@gmail.com](mailto:davidpardo016@gmail.com)
-* **LinkedIn:** [Jolgan Pardo](https://www.linkedin.com/in/jolgan-pardo-429a422a7/)
-* **GitHub:** [jolganpardo](https://github.com/jolganpardo)
+---
 
 ## 🔏 Licencia
 
-* © 2025 Jolgan Pardo. Todos los derechos reservados.
-* Este proyecto es de mi autoría y no puede ser utilizado sin autorización expresa.
+© 2025 Jolgan Pardo. Proyecto original, prohibida reproducción sin autorización expresa.
 
-› *¡Gracias por revisar mi portafolio!*
+---
 
+¡Gracias por revisar mi portafolio!  
+Explora el código, juega con la demo y conéctate para impulsar juntos la tecnología.
